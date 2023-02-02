@@ -1,0 +1,46 @@
+*{
+    padding: 0%;
+    margin: 0;
+}
+
+nav{
+    position: relative;
+    padding: 0 140px;
+    height: 90px;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-family: sans-serif;
+    background-color: white;
+    flex-wrap: wrap;   
+}
+body{
+    background-color: aqua;
+}
+
+nav img {
+    position: absolute;
+    width: 160px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-self: flex-end;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+   
+    
+}
+nav a{
+    text-decoration:none;
+    color:black;
+    gap: 10px;
+    text-align: center;
+    
+}
+

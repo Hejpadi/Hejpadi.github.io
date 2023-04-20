@@ -9,24 +9,23 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="./css/css-reset.css">
-        <link rel="stylesheet" type="text/css" href="./css/style.css">
-        <link rel="javascript" href="./js/script.js">
+        <link rel="stylesheet" type="text/css" href="../css/css-reset.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
         <script src="https://kit.fontawesome.com/42583ee64a.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
             <nav>
                 <div class="logo">
-                    <a href="index.html"></a>
+                    <a href="../index.html"></a>
                     <h1>SH</h1>
                     <h2>SchlättaHotellet</h2>
                 </div>
                 <ul role="list">
-                    <li><a href="./html/Hem.html">Hem</a></li>
-                    <li><a href="./html/Omoss.html">Om oss</a></li>
-                    <li><a href="./html/Varapaket.html">Våra paket</a></li>
-                    <li><a href="./html/boka.html">Boka</a></li>
+                    <li><a href="../html/Hem.html">Hem</a></li>
+                    <li><a href="../html/Omoss.html">Om oss</a></li>
+                    <li><a class="active" href="../html/Varapaket.html">Våra paket</a></li>
+                    <li><a href="../html/boka.html">Boka</a></li>
                 </ul>
             </nav>
             <div class="hero">
@@ -38,33 +37,21 @@
             <div class="container">
 
                 <div class="Picture-gallery">
-                    <div class="image"><img src="./img/breakfast-hotel-g2f12cfa43_640.jpg" alt="breakfast"></div>
-                    <div class="image"><img src="./img/design-geb5ae2953_640.jpg" alt="deign"></div>
-                    <div class="image"><img src="./img/receptionists-gf4626975f_640.jpg" alt="reception"></div>
-                    <div class="image"><img src="./img/steak-g3f7dab3e3_640.jpg" alt="steak"></div>
-                    <div class="image"><img src="./img/towel-gb1c9ac0c9_640.jpg" alt="towel"></div>
-                    <div class="image"><img src="./img/travel-gb32a6995a_640.jpg" alt="shrimps"></div>
-                    <div class="image"><img src="./img/wine-g354e09ad4_640.jpg" alt="wine"></div>
-                    <div class="image"><img src="./img/wine-g56a5e3d0f_640.jpg" alt="wine"></div>
+                    <div class="image"><img src="../img/breakfast-hotel-g2f12cfa43_640.jpg" alt="breakfast"></div>
+                    <div class="image"><img src="../img/design-geb5ae2953_640.jpg" alt="deign"></div>
+                    <div class="image"><img src="../img/receptionists-gf4626975f_640.jpg" alt="reception"></div>
+                    <div class="image"><img src="../img/steak-g3f7dab3e3_640.jpg" alt="steak"></div>
+                    <div class="image"><img src="../img/towel-gb1c9ac0c9_640.jpg" alt="towel"></div>
+                    <div class="image"><img src="../img/travel-gb32a6995a_640.jpg" alt="shrimps"></div>
+                    <div class="image"><img src="../img/wine-g354e09ad4_640.jpg" alt="wine"></div>
+                    <div class="image"><img src="../img/wine-g56a5e3d0f_640.jpg" alt="wine"></div>
                 </div>
                 <div class="popup-image">
                     <span>&times;</span>
-                    <img src="./img/breakfast-hotel-g2f12cfa43_640.jpg" alt="">
+                    <img src="../img/breakfast-hotel-g2f12cfa43_640.jpg" alt="">
                 </div>
             </div>
-            <div class="content">
-                <input type="checkbox" id="check">
-                <h2>SchlättaHotellet i Vara</h2>
-                <p>Ett av de mest moderna hotellen i Vara är det som byggdes år 2014. Detta hotell har en arkitektur som blandar traditionellt och modernt, med rena linjer och stora fönster som ger en ljus och luftig atmosfär. Hotellet är utrustat med de senaste teknologierna och erbjuder alla bekvämligheter som en resenär kan behöva.</p>
-                <br>
-                <p>Hotellets rum är rymliga och elegant inredda, med enkel och modern design. De är utrustade med allt från platt-tv och minibar till bekväma sängar och rymliga badrum. Rummen har också stora fönster som ger en fantastisk utsikt över staden eller naturen runt omkring.</p>
-                <div class="more-content">
-                    <p>På hotellets restaurang kan gästerna njuta av utsökta rätter från det lokala köket och internationella rätter, allt tillagat med färska och högkvalitativa ingredienser. Restaurangen är inredd med enkelhet och elegans och har en avslappnad och intim atmosfär.
 
-                        För affärsresenärer finns det också en fullt utrustad konferensanläggning som rymmer upp till 200 personer. Anläggningen har modern teknologi och bekvämligheter, inklusive trådlöst internet och projektorer, för att göra konferenser och möten effektiva och smidiga.</p>
-                </div>
-                <label for="check">Läs Mer</label>
-            </div>
             <script>
                 document.querySelectorAll('.Picture-gallery img').forEach(image =>{
                     image.onclick = () =>{
@@ -77,6 +64,7 @@
                     document.querySelector('.popup-image').style.display = 'none';
                 }
             </script>
+
         </MAin>
         <footer>
             <div class="footer-contact">

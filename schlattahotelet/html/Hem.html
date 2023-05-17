@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>SchlättHotelet</title>
+        <title>SchlättHotellet</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../css/css-reset.css">
         <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="javascript" href="./js/script.js">
         <script src="https://kit.fontawesome.com/42583ee64a.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -21,21 +22,49 @@
                     <h1>SH</h1>
                     <h2>SchlättaHotellet</h2>
                 </div>
+                <label class="hamburger-menu">
+                    <input type="checkbox">
+                </label> 
                 <ul role="list">
-                    <li><a class="active" href="../html/Hem.html">Hem</a></li>
-                    <li><a href="../html/Omoss.html">Om oss</a></li>
-                    <li><a href="../html/Varapaket.html">Våra paket</a></li>
-                    <li><a href="../html/boka.html">Boka</a></li>
-                </ul>
+                    <li><a href="./html/Hem.html">Hem</a></li>
+                    <li><a href="./Omoss.html">Om oss</a></li>
+                    <li><a href="./Varapaket.html">Våra paket</a></li>
+                    <li><a href="./boka.html">Boka</a></li>
+                </ul>    
             </nav>
             <div class="hero">
                 <h1>Skaraborgs bästa hotellservice!</h1>
                 <h2>Vi ser till att du får den bästa upplevelsen här på SchlättaHotellet</h2>
             </div>
+            <div class="card-container">
+                <div class="card">
+                    <img src="../img/hotel-1749602_640.jpg" alt="Hotell rum">
+                    <div class="intro">
+                        <h1>Våra rum</h1>
+                        <p>Våra hotell <span>rum</span> är något som vi är mycket stolta över. Rumen har modern inredning
+                              och är utrustade med allt du kommer att behöva.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/receptionists-gf4626975f_640.jpg" alt="Personal">
+                    <div class="intro">
+                        <h1>Personal</h1>
+                        <p>Våra <span>assistenter</span> är något som vi är mycket stolta över. De ser till att du 
+                              som bor här på SchlättaHotellet får allt du behöver!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/restaurant-1284351_640.jpg" alt="Kockar">
+                    <div class="intro">
+                        <h1>Kockar</h1>
+                        <p>Våra <span>kockar</span> är något som vi är mycket stolta över. Deras förmåga i köcket är
+                              guldvärd du kommer definitivt inte att bli missnöjd.</p>
+                    </div>
+                </div>
+            </div>
         </header>
         <MAin>
             <div class="container">
-
                 <div class="Picture-gallery">
                     <div class="image"><img src="../img/breakfast-hotel-g2f12cfa43_640.jpg" alt="breakfast"></div>
                     <div class="image"><img src="../img/design-geb5ae2953_640.jpg" alt="deign"></div>
@@ -51,7 +80,19 @@
                     <img src="../img/breakfast-hotel-g2f12cfa43_640.jpg" alt="">
                 </div>
             </div>
+            <div class="content">
+                <input type="checkbox" id="check">
+                <h2>SchlättaHotellet i Vara</h2>
+                <p>Ett av de mest moderna hotellen i Vara är det som byggdes år 2014. Detta hotell har en arkitektur som blandar traditionellt och modernt, med rena linjer och stora fönster som ger en ljus och luftig atmosfär. Hotellet är utrustat med de senaste teknologierna och erbjuder alla bekvämligheter som en resenär kan behöva.</p>
+                <br>
+                <p>Hotellets rum är rymliga och elegant inredda, med enkel och modern design. De är utrustade med allt från platt-tv och minibar till bekväma sängar och rymliga badrum. Rummen har också stora fönster som ger en fantastisk utsikt över staden eller naturen runt omkring.</p>
+                <div class="more-content">
+                    <p>På hotellets restaurang kan gästerna njuta av utsökta rätter från det lokala köket och internationella rätter, allt tillagat med färska och högkvalitativa ingredienser. Restaurangen är inredd med enkelhet och elegans och har en avslappnad och intim atmosfär.
 
+                        För affärsresenärer finns det också en fullt utrustad konferensanläggning som rymmer upp till 200 personer. Anläggningen har modern teknologi och bekvämligheter, inklusive trådlöst internet och projektorer, för att göra konferenser och möten effektiva och smidiga.</p>
+                </div>
+                <label for="check">Läs Mer</label>
+            </div>
             <script>
                 document.querySelectorAll('.Picture-gallery img').forEach(image =>{
                     image.onclick = () =>{
@@ -64,7 +105,6 @@
                     document.querySelector('.popup-image').style.display = 'none';
                 }
             </script>
-
         </MAin>
         <footer>
             <div class="footer-contact">
@@ -75,7 +115,7 @@
                     Telefon: 08-123456<br>
                     Email: info@SchlättaHotellet.se
                 </p>
-                </div>
+            </div>
             <div class="logor">
                 <div class="text-center">
                     <p>&copy; 2023 SchlättaHotellet</p>
